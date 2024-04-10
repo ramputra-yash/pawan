@@ -1,0 +1,20 @@
+.chat_icon {
+    background: red;
+    height: 75px;
+    width: 75px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    transition: .4s;
+}
+.chat_icon:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,.6);
+    transform: scale(1.05);
+}

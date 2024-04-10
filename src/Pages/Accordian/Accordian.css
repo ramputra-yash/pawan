@@ -1,0 +1,13 @@
+.a-h1 {
+    background: #fff;
+    padding: 10px 20px;
+    color: #0897CF;
+    margin: 5px;
+    margin-bottom: 20px;
+    box-shadow: -5px -5px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+    border: 5px solid #fff;
+}
+.accordion {
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}

@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    border-bottom: 2px solid #0897cf7b;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+img {
+    width: 90px;
+}
+.menu {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.menu .icon {
+    position: absolute;
+    background: #0897cf;
+    height: 4px;
+    width: 40px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.menu.active .icon {
+    background: transparent;
+}
+.menu .icon::before {
+    position: absolute;
+    content: " ";
+    background: #0897cf;
+    transform: translateY(-10px);
+    border-radius: 10px;
+    height: 4px;
+    width: 40px;
+    transition: .5s;
+}
+.menu.active .icon::before {
+    transform: translateY(0px) rotate(45deg);
+    background: red;
+}
+.menu .icon::after {
+    position: absolute;
+    content: " ";
+    background: #0897cf;
+    border-radius: 10px;
+    transform: translateY(10px);
+    height: 4px;
+    transition: .5s;
+    width: 40px;
+}
+.menu.active .icon::after {
+    transform: translateY(0px) rotate(-45deg);
+    background: red;
+}
